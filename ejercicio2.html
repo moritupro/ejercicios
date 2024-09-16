@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Estilos generales para centrar los DIVs */
+        .cajita {
+            border: 2px solid blue;  /* Borde de 2px y color azul */
+            text-align: center;      /* Texto centrado */
+            font-family: Courier, monospace;  /* Tipo de letra Courier */
+            background-color: yellow;  /* Resaltado de texto con fondo amarillo */
+            margin: 0 auto;           /* Centrar el div horizontalmente */
+            width: 50%;               /* Definir un ancho para centrar correctamente */
+        }
+    </style>
+</head>
+<body>
+    <div class="cajita">
+        Este es el primer div centrado con borde azul.
+    </div>
+    <div class="cajita">
+        Este es el segundo div centrado con borde azul.
+    </div>
+
+    <p class="miClase">Los tres tristes tigres tragan trigo</p>
+    <p class="miClase">Feliz día del programador! 12 de septiembre</p>
+
+    <script>
+        let elementos = document.getElementsByClassName("miClase");
+        for (let i = 0; i < elementos.length; i++) {
+            elementos[i].style.color = "green";
+        }
+    </script>
+</body>
+</html>

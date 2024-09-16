@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio</title>
+</head>
+<body>
+    <h1>Ejemplo de creacion de elementos</h1>
+    <button onclick="agregarParrafo()">Añadir parrafo</button>
+    <script>
+        function agregarParrafo(){
+            //Crear un nuevo elemento <p>
+                let nuevoParrafo=document.createElement("p")
+                //Establecer el texto del párrafo
+                nuevoParrafo.textContent="Este es un nuevo parrafo";
+
+                //Añadir el parrafo al final del body
+                document.body.appendChild(nuevoParrafo);
+        }
+    </script>
+</body>
+</html>

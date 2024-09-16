@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear y añadir un Div</title>
+</head>
+<body>
+    <h1>Ejemplo de creacion de DIV</h1>
+    <button onclick="agregarDiv()">Añadir Div</button>
+    <button onclick="agregarParrafo()">Añadir Parrafo</button>
+
+    <script>
+        function agregarDiv(){
+            // Crear un nuevo elemento <div>
+            let nuevoDiv = document.createElement("div");
+
+            // Establecer el texto dentro del div
+            nuevoDiv.textContent = "Este es un nuevo div con estilos aplicados";
+
+            // Aplicar los estilos al div
+            nuevoDiv.style.border = "4px solid green";  
+            nuevoDiv.style.width = "400px";             
+            nuevoDiv.style.textAlign = "center";       
+            nuevoDiv.style.fontFamily = "Verdana, sans-serif";  
+            nuevoDiv.style.margin = "20px auto";        
+
+            // Añadir el div al final del body
+            document.body.appendChild(nuevoDiv);
+        }
+        function agregarParrafo() {
+            // Crear un nuevo elemento <div>
+            let nuevoDiv = document.createElement("div");
+
+            // Establecer el texto dentro del div
+            nuevoDiv.textContent = "Este es un nuevo div con estilos aplicados";
+
+            // Aplicar los estilos al div
+            nuevoDiv.style.border = "4px solid green";  
+            nuevoDiv.style.width = "400px";             
+            nuevoDiv.style.textAlign = "center";       
+            nuevoDiv.style.fontFamily = "Verdana, sans-serif";  
+            nuevoDiv.style.margin = "20px auto";        
+
+            // Añadir el div al final del body
+            document.body.appendChild(nuevoDiv);
+        }
+    </script>
+</body>
+</html>
